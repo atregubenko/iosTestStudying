@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -9,37 +9,61 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FirstTestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Jdm-uF-LGQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="gV4-cF-WAW"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="topRight" id="q74-tU-aU7">
-                                <rect key="frame" x="170" y="20" width="130" height="254"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.90862266553296889" blue="0.52347414789145552" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
-                            <view contentMode="scaleToFill" id="2bt-S7-MvM">
-                                <rect key="frame" x="20" y="20" width="130" height="254"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.83904058741725429" green="1" blue="0.64846561073450903" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
-                            <view contentMode="bottom" id="5aE-mM-49O">
-                                <rect key="frame" x="20" y="294" width="280" height="254"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.68248654520623975" green="1" blue="0.89052111258055311" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SnM-1o-7cw">
+                                <rect key="frame" x="290" y="289" width="19" height="22"/>
+                                <state key="normal" image="test_icon"/>
+                                <connections>
+                                    <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bmq-wZ-E9x"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recording..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p8Y-SC-MUI">
+                                <rect key="frame" x="257" y="319" width="87" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="ZLT-Il-l3P"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zg5-tc-jy2">
+                                <rect key="frame" x="275" y="450" width="50" height="50"/>
+                                <state key="normal" image="stop"/>
+                                <connections>
+                                    <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9DQ-mE-oH8"/>
+                                    <action selector="stopButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KXD-OX-v92"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SnM-1o-7cw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0ZV-AH-lkH"/>
+                            <constraint firstItem="SnM-1o-7cw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9iJ-BG-ois"/>
+                            <constraint firstItem="p8Y-SC-MUI" firstAttribute="top" secondItem="SnM-1o-7cw" secondAttribute="bottom" constant="8" symbolic="YES" id="DGh-UV-zWl"/>
+                            <constraint firstItem="p8Y-SC-MUI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j37-RZ-UUx"/>
+                            <constraint firstItem="gV4-cF-WAW" firstAttribute="top" secondItem="Zg5-tc-jy2" secondAttribute="bottom" constant="100" id="jB4-05-gvE"/>
+                            <constraint firstItem="Zg5-tc-jy2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nbk-z1-eIB"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="bottomView" destination="5aE-mM-49O" id="gdc-J7-fmT"/>
-                        <outlet property="topLeftView" destination="2bt-S7-MvM" id="NSe-oh-ie3"/>
-                        <outlet property="topRightView" destination="q74-tU-aU7" id="Bsf-Pp-NTf"/>
+                        <outlet property="stopButton" destination="Zg5-tc-jy2" id="4RB-s3-rBt"/>
+                        <outlet property="testLabel" destination="p8Y-SC-MUI" id="dFw-Rh-YT8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="288" y="438.99999999999994"/>
+            <point key="canvasLocation" x="540" y="463"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="stop" width="50" height="50"/>
+        <image name="test_icon" width="19" height="19"/>
+    </resources>
 </document>
