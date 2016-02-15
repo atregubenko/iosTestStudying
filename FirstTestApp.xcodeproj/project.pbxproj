@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		35098AF61C68D035000A3BED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35098AF51C68D035000A3BED /* AppDelegate.swift */; };
-		35098AF81C68D035000A3BED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35098AF71C68D035000A3BED /* ViewController.swift */; };
 		35098AFB1C68D035000A3BED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35098AF91C68D035000A3BED /* Main.storyboard */; };
 		35098AFD1C68D035000A3BED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35098AFC1C68D035000A3BED /* Assets.xcassets */; };
 		35098B001C68D035000A3BED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35098AFE1C68D035000A3BED /* LaunchScreen.storyboard */; };
 		35098B0B1C68D035000A3BED /* FirstTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35098B0A1C68D035000A3BED /* FirstTestAppTests.swift */; };
 		35098B161C68D035000A3BED /* FirstTestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35098B151C68D035000A3BED /* FirstTestAppUITests.swift */; };
 		355254881C6B306F0057971F /* PlayingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355254871C6B306F0057971F /* PlayingCard.swift */; };
+		35DBBE931C72122C00B612CF /* Localization.strings in Resources */ = {isa = PBXBuildFile; fileRef = 35DBBE921C72122C00B612CF /* Localization.strings */; };
+		35DBBE971C72231200B612CF /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35DBBE961C72231200B612CF /* Roboto-Light.ttf */; };
+		35DBBE991C72243100B612CF /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DBBE981C72243100B612CF /* MainTableViewController.swift */; };
 		35E0E7C21C6A152700069515 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E0E7C11C6A152700069515 /* Card.swift */; };
 		B052D4CC6ADF88C945FF035E /* Pods_FirstTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AF23258D1566D7BDD3D82EA /* Pods_FirstTestApp.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
@@ -39,7 +41,6 @@
 /* Begin PBXFileReference section */
 		35098AF21C68D035000A3BED /* FirstTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35098AF51C68D035000A3BED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		35098AF71C68D035000A3BED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		35098AFA1C68D035000A3BED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		35098AFC1C68D035000A3BED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35098AFF1C68D035000A3BED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +52,9 @@
 		35098B151C68D035000A3BED /* FirstTestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTestAppUITests.swift; sourceTree = "<group>"; };
 		35098B171C68D035000A3BED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		355254871C6B306F0057971F /* PlayingCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayingCard.swift; sourceTree = "<group>"; };
+		35DBBE921C72122C00B612CF /* Localization.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localization.strings; sourceTree = "<group>"; };
+		35DBBE961C72231200B612CF /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Light.ttf"; path = "../Roboto-Light.ttf"; sourceTree = "<group>"; };
+		35DBBE981C72243100B612CF /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		35E0E7C11C6A152700069515 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		3F1B4A5393E627F0A90BB121 /* Pods-FirstTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstTestApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirstTestApp/Pods-FirstTestApp.release.xcconfig"; sourceTree = "<group>"; };
 		52966D975DC69613B95ED6FB /* Pods-FirstTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstTestApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirstTestApp/Pods-FirstTestApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -108,13 +112,13 @@
 		35098AF41C68D035000A3BED /* FirstTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				35DBBE941C72213300B612CF /* Resources */,
 				35E0E7C41C6A171500069515 /* Entity */,
 				35098AF51C68D035000A3BED /* AppDelegate.swift */,
-				35098AF71C68D035000A3BED /* ViewController.swift */,
 				35098AF91C68D035000A3BED /* Main.storyboard */,
-				35098AFC1C68D035000A3BED /* Assets.xcassets */,
 				35098AFE1C68D035000A3BED /* LaunchScreen.storyboard */,
 				35098B011C68D035000A3BED /* Info.plist */,
+				35DBBE981C72243100B612CF /* MainTableViewController.swift */,
 			);
 			path = FirstTestApp;
 			sourceTree = "<group>";
@@ -135,6 +139,16 @@
 				35098B171C68D035000A3BED /* Info.plist */,
 			);
 			path = FirstTestAppUITests;
+			sourceTree = "<group>";
+		};
+		35DBBE941C72213300B612CF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				35DBBE961C72231200B612CF /* Roboto-Light.ttf */,
+				35DBBE921C72122C00B612CF /* Localization.strings */,
+				35098AFC1C68D035000A3BED /* Assets.xcassets */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		35E0E7C41C6A171500069515 /* Entity */ = {
@@ -271,6 +285,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				35098B001C68D035000A3BED /* LaunchScreen.storyboard in Resources */,
+				35DBBE931C72122C00B612CF /* Localization.strings in Resources */,
+				35DBBE971C72231200B612CF /* Roboto-Light.ttf in Resources */,
 				35098AFD1C68D035000A3BED /* Assets.xcassets in Resources */,
 				35098AFB1C68D035000A3BED /* Main.storyboard in Resources */,
 			);
@@ -345,8 +361,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35DBBE991C72243100B612CF /* MainTableViewController.swift in Sources */,
 				35E0E7C21C6A152700069515 /* Card.swift in Sources */,
-				35098AF81C68D035000A3BED /* ViewController.swift in Sources */,
 				355254881C6B306F0057971F /* PlayingCard.swift in Sources */,
 				35098AF61C68D035000A3BED /* AppDelegate.swift in Sources */,
 			);

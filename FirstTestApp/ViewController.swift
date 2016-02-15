@@ -10,12 +10,6 @@ import UIKit
 import Alamofire
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var topRightView: UIView!
-    @IBOutlet weak var topLeftView: UIView!
-    @IBOutlet weak var bottomView: UIView!
-    @IBOutlet weak var testLabel: UILabel!
-    @IBOutlet weak var stopButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,19 +21,5 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewWillAppear(animated: Bool) {
-        testLabel.hidden = true
-        stopButton.hidden = true
-    }
-
-    @IBAction func recordAudio(sender: UIButton) {
-        print("recordAudio");
-        testLabel.hidden = false
-    }
-    
-    @IBAction func stopButton(sender: UIButton) {
-        print("stopButton");
-        testLabel.hidden = true
-    }
 }
 
